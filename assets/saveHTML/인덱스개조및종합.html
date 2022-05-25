@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스위치문서 JS로 내용만들어보기</title>
+</head>
+
+<body>
+	
+	<!--이식할 때에는 버튼이 아니라 메뉴에 붙여야함.-->
+    <input type="button" value="문서01" onclick="ChangeMainContents01()" />
+    <input type="button" value="문서02" onclick="ChangeMainContents02()" />
+    <input type="button" value="문서03" onclick="ChangeMainContents03()" />
+    <input type="button" value="문서04" onclick="ChangeMainContents04()" />
+    <input type="button" value="문서05" onclick="ChangeMainContents05()" />
+    <input type="button" value="문서06" onclick="ChangeMainContents06()" />
+    <input type="button" value="문서07" onclick="ChangeMainContents07()" />
+    <input type="button" value="문서08" onclick="ChangeMainContents08()" />
+    <input type="button" value="문서09" onclick="ChangeMainContents09()" />
+    <input type="button" value="문서10" onclick="ChangeMainContents10()" />
+    <input type="button" value="문서11" onclick="ChangeMainContents11()" />
+    <input type="button" value="문서12" onclick="ChangeMainContents12()" />
+    <input type="button" value="문서13" onclick="ChangeMainContents13()" />
+    <input type="button" value="문서14" onclick="ChangeMainContents14()" />
+    <input type="button" value="문서15" onclick="ChangeMainContents15()" />
+    <input type="button" value="문서16" onclick="ChangeMainContents16()" />
+
+    <h1>헤더</h1>
+    <div id="LocationMainContents">본문의 위치장소</div>
+
+    <!--JS로 작성하는 본문서-->
+    <!--what_is_Switch-->
+    <script>
+		function ChangeMainContents01() {
+            document.getElementById('LocationMainContents').innerHTML = TextMainContents01;
+        }
+        function ChangeMainContents08() {
+            document.getElementById('LocationMainContents').innerHTML = TextMainContents08;
+        }
+        function ChangeMainContents09() {
+            document.getElementById('LocationMainContents').innerHTML = TextMainContents09;
+        }
+
+        //홈페이지메인 load_Page01
+        var TextMainContents01 = 
+        `
+		<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h1>'Keyboard Pathfinder' <br />
+								나의 키보드를 찾는 쉽고 빠른 방법</h1>
+							<p>지금 비싸고 고르기 어려운 기계식키보드에 답을 찾습니다.</p>
+						</header>
+						<p>컴퓨터는 업무에서 뗄 수 없는 도구가 되었고 입력장치인 키보드는 충분히 발전하였습니다. 하지만 비싸고 선택하기 어려운 키보드를 이제는 제대로 이용할 필요가 있습니다.
+							처음시작하기에 어려운 기계식키보드를 쉽게 알려드립니다.</p>
+						<ul class="actions">
+							<li><a href="keyBoardMbti.html" class="button big">My Keyboard MBTI ➩Go</a></li>
+							<li><a href="BrandMbti.html" class="button big">Keyboard Brand MBTI ➩Go</a></li>
+							<p></p>
+						</ul>
+					</div>
+					<span class="image object">
+						<img src="images/index/pic00.png" alt="" />
+					</span>
+				</section>
+
+				<!-- Section -->
+				<section id="index_1">
+					<header class="major">
+						<h2>홈페이지 소개</h2>
+					</header>
+					<div class="features">
+						<article>
+							<span class="icon fa-paper-plane"></span> <!-- Section -->
+							<div class="content">
+								<h3>방법을 제시해드립니다.</h3>
+								<p>메뉴:"나의 키보드찾기"에서는 어떤 키보드가 필요한지 알아 볼 수 있도록 간단한 조사과 결과를 제공합니다. 원한다면 바로 물건을 찾아 볼 수도 있습니다.
+								</p>
+							</div>
+						</article>
+						<article>
+							<span class="icon solid fa-signal"></span> <!--  -->
+							<div class="content">
+								<h3>정보를 제공해드립니다.</h3>
+								<p>추천에만 의존하지 마세요. 키보드의 정보와 키캡의 정보를 한번에 모아두었습니다. 직접 키보드의 세계를 구경하시고 전문가가 되어보세요. 묻고 사지만 말고
+									전문가도 되어보세요.</p>
+							</div>
+						</article>
+						<article>
+							<span class="icon solid fa-rocket"></span> <!-- Section -->
+							<div class="content">
+								<h3>물건을 빠르게 처리합니다.</h3>
+								<p>충분한 정보를 가지고 기계식키보드에 대한 확신이 들었다면 국내외 시장에서 물건을 찾고 구매하여 실질적인 사용과 더 나은 입력환경을 누려보세요.</p>
+							</div>
+						</article>
+						<article>
+							<span class="icon solid fa-gem"></span> <!-- Section -->
+							<div class="content">
+								<h3>순서대로 방법을 제시합니다.</h3>
+								<p>홈페이지에서 준비된 다양한 설문조사, 부족한 정보를 채우기 위한 사전, 타건영상과 키캡정보, 구매방법까지 진행하여 가장 적합한 기계식키보드를 찾아보세요.
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section id="index_2">
+					<header class="major">
+						<h2>서비스 찾아보기</h2>
+					</header>
+					<div class="posts">
+						<article>
+							<a href="keyBoardMbti.html" class="image"><img src="images/index/pic01.png"
+									alt="images/noimage.jpg" /></a>
+							<h3>나의 키보드 MBTI 알아보기</h3>
+							<p>최신 테스트 기법이 도입된 Mykey-Board-Type-Indicator. (나의키-보드-유형-지표)를 기반으로 하여 나에게 맞는 키보드를 찾아보도록 하세요.
+								키보드를 몰라도 찾아 볼 수 있습니다.</p>
+							<ul class="actions">
+								<li><a href="keyBoardMbti.html" class="button">More</a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="imageShopping.html" class="image"><img src="images/index/pic02.jpg"
+									alt="images/noimage.jpg" /></a>
+							<h3>이미지로 조립해보기</h3>
+							<p>텍스트만으로는 실질적인 조립이 잘 이해되지 않을 수 있습니다. 이미지를 통해 조립해보세요. 기계식키보드의 부속 이미지를 Drag&Drop하여 장바구니에 고르고
+								합쳐 보세요.</p>
+							<ul class="actions">
+								<li><a href="imageShopping.html" class="button">More</a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="whatisKeyboard.html" class="image"><img src="images/index/pic03.png"
+									alt="images/noimage.jpg" /></a>
+							<h3>기계식키보드 정보 보기</h3>
+							<p>기계식키보드에 대해서 더 알고 싶나요? 자세히 알아보고 구매하고 싶으신가요? 추천만으로는 부족하시다면 기계식키보드에 대해서 모아놓은 정보를 간편하게 열람하세요.
+								확인하고 습득하세요. 키보드만 보지 말고 키캡도 보고 디자인을 탐구하세요.</p>
+							<ul class="actions">
+								<li><a href="whatisKeyboard.html" class="button">More</a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="videoSwitch.html" class="image"><img src="images/index/pic04.png"
+									alt="images/noimage.jpg" /></a>
+							<h3>키보드 타건 영상 보기</h3>
+							<p>없는 키보드를 쓸 수는 없지만 다른 사람이 쓰는 것은 볼 수 있습니다. 영상매체를 통해 기계식키보드를 미리 접해보세요. 누르는 모습과 소리에 집중해보세요.
+								시각과 청각을 집중하세요.</p>
+							<ul class="actions">
+								<li><a href="videoSwitch.html" class="button">More</a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="buyDanawa.html" class="image"><img src="images/index/pic05.jpg"
+									alt="images/noimage.jpg" /></a>
+							<h3>제품 구매하기</h3>
+							<p>'다나와', '에누리', '알리익스프레스'에서 현명하게 구매해보세요.</p>
+							<ul class="actions">
+								<li><a href="buyDanawa.html" class="button">More</a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="talkExpert.html" class="image"><img src="images/index/pic06.jpg"
+									alt="images/noimage.jpg" /></a>
+							<h3>전문가와 상담하기</h3>
+							<p>전문가와의 대화가 필요한가요? 홈페이지를 통하여 전문가와 상담을 연결하고 원하는 결정을 내리실 수 있도록 지원합니다.</p>
+							<ul class="actions">
+								<li><a href="talkExpert.html" class="button">More</a></li>
+							</ul>
+						</article>
+					</div>
+				</section>
+        `
+        //나의키보드MBTI load_Page02
+        var TextMainContents02 = 
+        `
+        `
+
+        //이미지조립해보기 load_Page03
+        var TextMainContents03 = 
+        `
+        `       
+        
+        //나의브랜드MBTI load_Page04
+        var TextMainContents04 = 
+        `
+        `
+
+        //내가찾은키보드목록보기 load_Page05
+        var TextMainContents05 = 
+        `
+        `
+
+        //키캡의종류 load_Page06
+        var TextMainContents06 = 
+        `
+        `
+
+        //추천하는키캡 load_Page07
+        var TextMainContents07 = 
+        `
+        `
+
+        //기계식키보드의 개론 load_Page08
+        var TextMainContents08 = 
+        `
+		<section>
+					<header class="main">
+						<h1>기계식키보드. 입력장치계의 만년필</h1>
+					</header>
+					<h4>목차</h4>
+					<ol>
+						<li><a href="#goodPoint">기계식키보드의 장점.</a></li>
+						<li><a href="#badPoint">기계식키보드의 단점.</a></li>
+						<li><a href="#partOfKeyboard">기계식키보드의 구성요소.</a></li>
+					</ol>
+
+					<span class="image main"><img src="" /></span>
+
+					<p>키보드의 한 종류. 기계식 키보드(Mechanical Keyboard)의 정의는 통일되어 있지 않으나 통상적으로 아래의 조건을 모두 만족하면 기계식 키보드로 분류한다.</p>
+					<p>축전식이 아닐 것.</p>
+					<p>분리되어 있던 금속 접점이 서로 접촉하며 키가 입력되는 방식일 것.</p>
+					<p>금속 접점이 분리할 수 있는 스위치 내부에 존재할 것.</p>
+
+					<hr class="major" />
+
+					<a id="goodPoint"></a>
+					<h2>기계식 키보드의 장점</h2>
+					<span class="image main"><img src="" /></span>
+					<b>
+						<p>무한 동시 입력</p>
+					</b>
+					<p>기계식 키보드는 무한 동시 입력을 지원한다. 무한 동시 입력[5] 또는 안티 고스팅(Anti-Ghosting)은 고스팅과 블록킹이 발생하지 않는 상태를 가리킨다.
+						고스팅(Ghosting)은 누르지 않은 키와 연결된 회로로 전류가 흘러, 해당 키에서 키가 입력되는 현상을 가리키며, 3개 이상의 키를 동시에 누르면 발생할 수 있다.
+						블록킹(Blocking)은 고스팅을 막는 가장 단순한 방법으로, 고스팅을 발생시키는 키 입력을 무시하는 것을 의미한다. 하지만 블록킹은 사용자에게 불편함을 줄 수 있다는
+						단점이 있다.[6] 고스팅을 막는 근본적인 방법은 각각의 스위치마다 다이오드를 실장하는 것이다. 다이오드가 실장된 키보드는 누르지 않은 키와 연결된 회로로 전류가 흐르지
+						않아 고스팅이 발생하지 않으며, 블록킹이 필요하지 않다. 기계식 키보드는 이러한 방법으로 무한 동시 입력을 지원할 수 있다. 원가를 절감하기 위해 다이오드를 실장하지 않아
+						무한 동시 입력이 불가능한 기계식 키보드도 있으나 매우 드물다.
+
+						같은 접점을 이용한 멤브레인 키보드는 기판 대신 멤브레인 시트를 사용하기 때문에 다이오드를 실장하는 것이 어렵고, 실장하더라도 단가가 상당히 높아지는 문제점이 있어 보통의
+						멤브레인 키보드는 블록킹을 사용한다. 따라서 멤브레인 키보드는 3개 이상의 키를 동시에 누르면 일부 키에서 키 입력이 되지 않을 수 있다. 이는 멤브레인 시트를 사용하는
+						팬터그래프 키보드도 마찬가지다. 이렇게 블록킹이 적용된 상태를 2키 동시 입력이라고 가리킨다.
+
+						멤브레인 키보드 중에는 2키 동시 입력에 추가적인 회로를 배치해 자주 사용되는 키 조합에서만 최대 2키 이상의 동시 입력을 구현하거나, 각각의 키마다 추가적인 회로를 배치해
+						키보드 전체에서 2키 이상의 동시 입력을 구현하는 경우도 있다. 이러한 키보드 중에는 과장 광고를 하는 경우가 많아 주의가 필요하다. 예를 들어, 제품 스펙에서는 19키
+						동시 입력이 가능하다고 광고하지만, 실제로는 2키 동시 입력에 자주 사용되는 키 조합에서만 19키 동시 입력이 가능한 식이다. 본래 'X키 동시 입력'이라는 용어는 키보드
+						전체에서 고스팅과 블록킹을 발생시키지 않고 동시에 입력될 수 있는 키 개수가 최대 X개라는 것을 의미하나, 제조사마다 의미가 통일되지 않아 이와 같이 남용되기도 한다. 일부
+						제조사에서는 원래 의미와 구별하기 위해 '최대 X키 동시 입력'이라는 표현을 사용하기도 한다. 무한 동시 입력이 가능한 (아마도 유일한) 멤브레인 키보드로 스카이디지탈의
+						NKEY 키보드가 있다. 해당 키보드는 같은 열의 스위치끼리 묶은 후 키보드 컨트롤러가 실장된 기판에 다이오드를 실장하는 방법으로 무한 동시 입력을 구현했다.
+
+						참고로 무한 동시 입력을 지원하지만, 6키 동시 입력을 지원하는 키보드도 있을 수 있다. 이러한 6키 동시 입력은 무한 동시 입력이 가능한 키보드에서 USB 단자의 HID
+						프로토콜의 한계로 동시에 입력될 수 있는 키의 개수가 6개로 제한된 상태를 가리킨다. 이러한 6키 동시 입력 상태에서는 Shift, Control, Alt, Windows
+						키 중 1개의 키와 그외의 6개의 키가 동시에 입력이 가능하기 때문에, 6+1 키 동시 입력, 10키 동시 입력[7], 14키 동시 입력[8]이라고 표현하기도 한다. 일부
+						제조사에서는 USB HID 프로토콜을 수정해 USB로 연결된 상태에서도 무한 동시 입력이 가능하게끔 설계하지만, 이러한 방식은 보안 프로그램 등과 충돌하는 문제점이 있다.
+						때문에 이러한 키보드는 일반적으로 단축키 등을 통해 6키 동시 입력과 무한 동시 입력 상태를 전환할 수 있거나, PS2 단자를 사용했을 때만 무한 동시 입력이 가능하게끔
+						설계된다. 일부 기계식 키보드는 USB HID 프로토콜을 수정해 동시에 입력될 수 있는 키의 개수 제한을 늘리기도 한다. 예를 들어, 마티아스(Matias) 사의 Quiet
+						Pro 키보드는 이러한 방식으로 10키 동시 입력을 지원한다.</p>
+					<b>
+						<p>편안한 타이핑</p>
+					</b>
+					<p>보드에서 오버트래블은 빠르게 타이핑을 하는 도중에 실수로 키를 끝까지 누르지 못해 키를 입력하지 못하는 것을 방지하기 위한 인체공학적 설계이다. 기계식 키보드는 오버트래블
+						덕분에 키를 바닥까지 눌러줘야 하는 부담감 없이 편안한 타이핑이 가능하다. 멤브레인의 키보드의 단점 중 하나가 바로 이 오버트래블 설계가 없어 타이핑을 할 때 반드시 바닥을
+						쳐야 한다는 것이다. 대표적인 기계식 키보드/스위치 제조사인 체리 사의 경우, 홍보 자료에 'Ergonomic overtravel'이라는 표현을 자주 사용하며 오버트래블을
+						기계식 키보드의 큰 장점으로 내세우고 있다.</p>
+					<b>
+						<p>쉬운 수리</p>
+					</b>
+					<p>기계식 키보드는 수리가 쉽다. 기계식 키보드의 고장 중 대부분을 차지하는 스위치 고장은 새로운 스위치로 교체해주는 것으로 간단히 수리가 가능하다.[9] 기판의 회로가 고장났을
+						경우에는 고장난 회로를 와이어로 대체하는 와이어링으로 수리가 가능하다. 전문적으로 키보드를 튜닝하고 수리하는 사설 수리점(일명 공방)에서 수리를 받는 방법도 있다.</p>
+					<b>
+						<p>커스터마이징</p>
+					</b>
+					<p>현재 사용되고 있는 거의 모든 기계식 키보드는 체리 MX 스위치와 호환 스위치를 사용하고 있다. 덕분에 기계식 키보드는 키캡, 스위치, 하우징, 보강판 등 호환 가능한 부품을
+						구하기 쉽다. 이러한 폭넓은 호환성 덕분에 기계식 키보드는 다양한 커스터마이징이 가능하다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="badPoint"></a>
+					<h2>기계식 키보드의 단점</h2>
+					<span class="image main"><img src="" /></span>
+					<b>
+						<p>방수, 방진 문제</p>
+					</b>
+					<p>기계식 키보드는 광축 키보드와 달리 방수나 방진 처리를 하기 힘들다. 기계식 스위치는 전도성과 물리적인 접촉을 요구하고 금속 접점의 특성상 산화에 취약하므로 액체, 먼지와는
+						상극일 수밖에 없다.[10] 일부 스위치의 경우, 일정 정도의 방수, 방진을 구현하기는 하였으나, 물에 담궈도 작동할 수 있는 일부 방수, 방진 무접점, 광축 키보드 등에
+						비하면, 방수, 방진 성능이 상대적으로 부족한 편이다. 먼지 관리를 철저하게 해주지 않으면, 쓰지도 않고 보관만 했는데 오작동이 일어나서 어쩔 수 없이 파워 타건을 해야
+						하는 골 때리는 상황에 처할 수 있다. 의외로 스위치의 고장 원인은 마모보다는 먼지 문제가 제일 크다. 그나마 체리는 덜하지만, 다른 축을 지닌 키보드들은 이 문제가 상당히
+						심하다. 다시 뒤집어 이야기하면 체리의 신뢰성이 높고 가격도 높은 이유가 바로 이 때문이며, 카일과 오테뮤도 사이에 '막'이 존재하는 구조로 만들어서 먼지 유입을 막기 위한
+						노력을 하고 있다. 스위치를 공방에 맡겨서 윤활을 요청하거나, 혹은 최소한 주사기 같은 걸로 스위치 내부에 바람을 불어넣어주면 그나마 반푼어치 수리라도 가능하다. 하지만
+						이렇게 먼지로 접점이 고장나는 것을 예방하는 가장 좋은 방법은 연속적인 사용을 통해서 내부 접점에 먼지가 쌓일 틈을 안 주는 것이다. 수리방법이 있기는 있는데, 알코올을
+						스위치 내부에 가득채운후 연타를해서 마찰세정을 한후, 스위치를 누른채로 키보드를 뒤집어 알코올을 빠져나가게 하며 구정물도 씻어내면 된다.</p>
+					<b>
+						<p>높이와 손목 건강</p>
+					</b>
+					<p>기계식 키보드는 멤브레인 또는 팬터그래프 키보드에 비해 높이가 몇 배 이상 높다. 기계식 스위치는 긴 스트로크가 존재하기 때문에 스위치가 높을 수밖에 없고, 여기에 기판 및
+						키보드의 하판의 두께까지 더해져 전고가 매우 높아진다. 이렇게 높은 키보드는 손목 건강에 악영향을 줄 수 있다. 기계식 키보드를 사용할 계획이라면 손목 질병 예방을 위해
+						팜레스트 사용을 고려해야 하며, 만약 책상 위 공간적 여유 혹은 경제적 여유로 그렇지 못할 경우 다른 종류의 키보드 사용을 생각해 보아야 한다. 모든 신체가 그렇지만, 손목
+						건강은 해치기는 쉽지만 회복하기 어려우며, 손목 터널 증후군은 사전 증세 없이 나타날 수 있다.
+
+						이러한 단점을 피하기 위해 체리 및 카일에서는 로우 프로파일(LP) 스위치를 개발하였으나, 소수의 제품(쿨러마스터, 로지텍, 필코 등)에만 적용되었다. LP 스위치는 기존
+						하우징, 기판, 키캡 호환이 불가능하여 커스터마이징이 제한되어 있는 상황이고, 주로 일본 쪽에서 제작하는 자작 키보드에서 찾아볼 수 있다.</p>
+					<b>
+						<p>입력 지연</p>
+					</b>
+					<p>기계식 스위치의 금속 접점은 두 금속 부품이 붙었다가 떨어지는 과정에서 스스로의 반발력에 의해 진동을 하게 되며, 그 과정에서 전기 신호가 발생하는 구조이므로 오입력이 발생할
+						수 있다. 이러한 문제를 막기 위해서는 스위치에 입력이 되고 금속 접점의 진동이 멈출 때까지 해당 스위치의 입력 신호를 의도적으로 무시해야 한다. 이때, 금속 접점의 진동이
+						멈출 때까지 걸리는 시간을 바운싱 타임(Bouncing Time)이라고 부르며, 의도적인 입력 신호 지연을 디바운싱(De-bouncing)이라고 부른다. 즉, 디바운싱으로
+						인해 기계식 키보드는 키가 눌리고, 바운싱 타임이 지난 후, 입력이 이루어지게 된다. 바운싱 타임은 보통 1~5ms[11]로 매우 짧은 시간이기 때문에, 그 자체가
+						사용자에게 불편함을 주는 단점은 아니나, 입력 지연이 이보다 더 짧거나 거의 없는 무접점, 광축 키보드 등과 비교하면, 상대적인 단점이라고 볼 수 있다.</p>
+					<b>
+						<p>채터링</p>
+					</b>
+					<p>위에서 언급한 디바운싱을 제대로 설계하지 않았거나, 기계식 스위치의 초기 불량 등으로 바운싱 타임이 설계 값을 초과할 경우, 오입력이 이루어질 수 있으며, 이러한 현상을
+						채터링(Chattering)이라고 부른다.[12] 이 때문에 기계식 키보드는 신뢰할 수 있는 제조사에서 설계, 생산된 것을 사용하는 것이 좋다. 최소한의 개념이 있는
+						회사라면 간단히 캐퍼시터를 추가해서 회피하거나 혹은 소프트웨어적으로 무시를 하는 방법을 사용한다.</p>
+					<b>
+						<p>제한적인 입력 신호</p>
+					</b>
+					<p>기계식 스위치의 입력 신호는 On과 Off밖에 존재하지 않는다. 무접점이나 일부 광축 스위치 등의 경우, 입력 신호가 연속적인 변화량인 덕분에 이를 응용해, 입력 지점을
+						바꾸거나 아날로그 입력 기능[13]을 도입할 수 있다. 하지만 기계식 스위치에 이러한 기능을 도입하는 것은 불가능하다. 사용자에게 불편함을 주는 단점은 아니나, 다른 키보드
+						방식에 비해, 기능이 제한된다는 점은 단점이다.</p>
+					<b>
+						<p>짧은 수명</p>
+					</b>
+					<p>금속 부품으로 이루어진 금속 접점이 붙었다 떨어졌다 하는 과정에서 금속 부품이 손상되어 산화가 발생하는 문제가 있기 때문에 수명이 상대적으로 짧다. 이를 막기 위해 금속
+						부품에 도금 처리를 해두기는 했으나, 산화를 완전히 막을 수는 없어 광축 키보드 등에 비하면 수명이 낮다. 보통 기계식 키보드의 수명은 5천만회 ~ 1억 회 입력이지만,
+						광축 등의 키보드는 1억 회가 넘는 경우도 있다. 과거 Micro Switch(현 허니웰)에서 제조한 홀 효과 응용 무접점 키보드의 경우, 300억 회의 수명을 달성하기도
+						했다.PDF
+
+						그래도 기계식 키보드는 다른 어떠한 방식의 키보드보다 수리용 부품의 수급과 수리가 용이해 큰 단점은 아니다. 또한, 유지, 보수가 가능하다는 측면에서는 기계식 키보드가
+						오히려 수명이 가장 긴 키보드일 수도 있다. 무접점과 멤브레인, 팬터그래프 등은 러버돔을 사용하는지라 가만 냅둬도 자연히 러버돔이 세월의 흐름에 따라 경화되기 때문에 키감이
+						변하며[14], 광축은 키를 누르는 것과 상관없이 컴퓨터가 켜져 있는 시간에 따라 센서가 소모되기 때문에 하루 8시간을 꾸준히 컴퓨터 켜놓고 타자만 안 치더라도 결국 수명이
+						깎여나가는 데다[15] 이 센서는 현장에서 쉽게 교환할수도 없다. 이에 비해, 기계식 키보드는 적당한 환경에 방치해둔 80년대 제품이 2010년대에도 멀쩡히 작동하는 사례가
+						많다. 또한 과거에 비해, 기계식 스위치의 수명이 많이 개선된 부분도 있다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="partOfKeyboard"></a>
+					<b>
+						<h2>기계식 키보드의 구성요소</h2>
+					</b>
+					<span class="image main"><img src="" /></span>
+					<b>
+						<p>스위치</p>
+					</b>
+					<b>
+						<p>보강판</p>
+					</b>
+					<b>
+						<p>기판</p>
+					</b>
+					<b>
+						<p>키캡</p>
+					</b>
+					<b>
+						<p>케이스(=하우징)</p>
+					</b>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+				</section>
+        `
+
+        //기계식스위치의 분류 load_Page09
+        var TextMainContents09 =
+        ` 
+            <section>
+					<header class="main">
+						<h1>Switch. 키 입력 신호를 받는 부품</h1>
+						<h4>목차</h4>
+						<ol>
+							<li><a href="#Clicker">Clicker Switch.</a></li>
+							<li><a href="#Tactail">Non-Click Switch & Tactail Switch.</a></li>
+							<li><a href="#Linear">Linear.</a></li>
+							<li><a href="#mechanism">mechanism.</a></li>
+						</ol>
+					</header>
+
+					<span class="image main"><img src="images/whatisSwitch/switch_main.png"
+							alt="images/noimagelong.jpg" /></span>
+
+					<div class="box">
+						<p>기계식 키보드의 스위치는 키 입력 신호를 직접 받는 부품이다. 보통 키캡과 연결되는 플라스틱 구조물(스템 또는 슬라이더), 금속 접점과 반발력을 줄 수 있는 부품,
+							내부를 보호해줄 플라스틱 덮개(하우징)로 이루어진다. 스프링의 종류나 강도, 구조물의 모양 등을 다르게 만들면 스위치의 느낌이 달라진다. 스위치의 외형으로는 각각의
+							스위치를 구별하기 어려운 경우가 많아, 플라스틱 구조물에 색상을 입히고 해당 색의 이름으로 명명하는 경우가 많다. 스위치의 명칭은 제조사에서 붙이는 경우도 있지만
+							사용자들이 자의적으로 붙이는 경우도 많다.</p>
+					</div>
+
+					<hr class="major" />
+
+					<a id="Clicker"></a>
+					<h2>Clicker Switch, ex.청축</h2>
+					<span class="image main"><img src="images/whatisSwitch/switch_click.jpg"
+							style="max-width: 70%; max-height: 50%"></span>
+					<p>클릭(Click) 스위치는 키가 입력되었다는 것을 청각적 피드백, 즉 '클릭' 소리로 알려주는 특성을 가진 스위치를 말한다. 여기서 클릭이란 클릭 스위치의 청각적 피드백을
+						가리키는 관용적인 단어다. 클릭 스위치는 소리를 내기 위한 부품이 작동하면서 촉각적 피드백 즉, 구분감이 발생하는 경우가 많아, 대부분의 클릭 스위치는 '클릭' 소리와
+						구분감을 동시에 가진다. 주의할 점은 여기서 '클릭' 소리란 슬라이더가 하부 하우징에 닿으면서 발생하는 '딱(Clack)' 소리가 아닌 스위치 내부의 부품에 의해 발생하는
+						소리를 가리킨다는 점이다. 따라서 클릭 스위치는 아주 천천히 누르거나, 슬라이더가 하부 하우징에 닿지 않아도 '클릭' 소리가 발생한다. 의외로 조용한 청축이 가끔가다가
+						출시되는 경우가 있는데, 이런 경우는 기판과 하우징 사이에 흠읍재로 인한 소음감소 뿐만이 아니라 기판과 보강판에도 흠읍재가 장착된 모델의 경우, 청축이 시끄럽지 않고 조용한
+						경우가 간혹 있다. 대부분 이렇게 "조용한 청축"의 경우는 가격도 비싸다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="Tactail"></a>
+					<h2>Non-Click Switch & Tactail Switch, ex.갈축</h2>
+					<span class="image main"><img src="images/whatisSwitch/switch_tactile.jpg"
+							style="max-width: 70%; max-height: 50%"></span>
+					<p>넌클릭(Non-Click) 스위치는 구분감이 있는 스위치를 말한다. '넌클릭'이라는 용어의 유래는 클릭 스위치에서 '클릭' 소리를 뺀 것과 같다는 것에서 유래했다. 단, 클릭
+						스위치 중에 구분감 없이 '클릭' 소리만 나는 경우도 있어 올바른 용어는 아니다. 이 때문에 해외에서는 보통 촉각적 피드백이 있다는 뜻의 텍타일(Tactile)이라는 용어를
+						더 사용한다. 넌클릭 스위치는 '클릭' 소리를 내는 부품이 없기 때문에 스위치를 아주 천천히 누르거나, 슬라이더가 하부 하우징에 닿지 않으면, 아무런 소리가 나지 않는다.
+					</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="Linear"></a>
+					<h2>Linear, ex.적축</h2>
+					<span class="image main"><img src="images/whatisSwitch/switch_linear.jpg"
+							style="max-width: 70%; max-height: 50%"></span>
+					<p>리니어(Linear) 스위치는 키압이 선형적(Linear)으로 증가하는 스위치를 말한다. 어떠한 '클릭' 소리나 구분감이 없다. 다시말해 타건감이 심심하다. 하지만 그와 바꾼
+						장점은 움직이는 파트가 아예 없다시피 해서 내구성이 좋다. 80년대에 생산된 빈티지 스위치도 아직까지 사용할 수 있을 정도. 반면, 클릭이나 넌클릭의 경우 구조적으로
+						접점부에 문제가 생기는 경우가 많고 내구성과 별개로 걸림이나 소리가 달라지기 때문에 리니어처럼 오래 사용하지는 못한다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<h2>Mechanism. 타건 시 스위치 내부 모습</h2>
+					<a id="mechanism"></a>
+					<span class="image main"><img src="images/whatisSwitch/switch_autoiamge.gif" /></span>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+				</section>
+        `
+
+        //기계식스위치의 종류 load_Page10
+        var TextMainContents10 = 
+        `
+        `
+
+        //키보드의연결방식 load_Page11
+        var TextMainContents11 = 
+        `
+		<section>
+					<header class="main">
+						<h1>How to Connet? 다양한 연결 방법</h1>
+					</header>
+					<h4>목차</h4>
+					<ol>
+						<li><a href="#ConnectWire">유선 연결.</a></li>
+						<li><a href="#Connectwireless">무선 연결.</a></li>
+						<li><a href="#ConnectBuletooth">블루투스 연결.</a></li>
+						<li><a href="#ConnectBuletoothDongle">동글로 블루투스 연결.</a></li>
+					</ol>
+
+					<span class="image main"><img src="" /></span>
+					<!-- 키보드 입력에 대한 이미지.... (너무추상적인데) -->
+					<p>키보드 연결은 크게 3가지로 선으로 하는 연결인 <b>유선연결</b>과 신호송수신기인 Dongle을 통한 <b>무선연결</b>과 장치 내부에 적재된 무선통신장비를 이용하여
+						연결되는 <b>블루투스 연결</b>이 있습니다.</p>
+
+					<hr class="major" />
+
+					<a id="ConnectWire"></a>
+					<h2>1. 유선 연결</h2>
+					<span class="image fit"><img src="images/whatisConnect/wire.jpg"
+							style="max-width: 50%; max-height: 30%"></span>
+					<p>유선 연결은 선을 통하여 장치와 키보드를 연결하는 방식입니다.</p>
+					<p>유선 연결은 보안측면에서 우수하고 전송안정성이 높으며 구현이 쉽기 때문에 상당히 대중적인 방식입니다. 하지만 선의 존재로 사용에 불편함이 있기도 합니다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="Connectwireless"></a>
+					<h2>2. 무선 연결</h2>
+					<span class="image fit"><img src="images/whatisConnect/wireless.jpg"
+							style="max-width: 50%; max-height: 30%"></span>
+					<p>무선 연결은 송수신기인<b>동글(Dongle)</b>을 통해 장치와 키보드를 연결하는 방식입니다.</p>
+					<p>동글을 통한 무선 연결은 즉각적이며 소프트웨어, 칩셋의 탑재여부와 별개로 작동하기 때문에 편리하고 wifi나 bluetooth등의 전파간섭에 상대적으로 강해서 편리하긴 하지만
+						보안측면에서 가장 취약한 방법입니다. 또한 동글은 크기가 작은 송수신기이기에 분실의 여지도 큽니다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="ConnectBuletooth"></a>
+					<h2>3. 블루투스 연결</h2>
+					<span class="image fit"><img src="images/whatisConnect/bluetooth.jpg"
+							style="max-width: 50%; max-height: 30%"></span>
+					<p>블루투스 연결은 연결할 장치 내부에 Bluetooth기능을 지원하고 키보드에서도 Bluetooth기능이 지원 될 때 장치와 키보드간 Bluetooth로 연결하는 방법입니다.
+					</p>
+					<p>블루투스에는 버전이 존재하며 버전에 따라 지원하는 기능이나 전력 효율, 연결 효율에서 차이가 발생할 수 있습니다.</p>
+					<h4>Bluetooth version.</h4>
+					<h6>(2022년 04월 17일 기준)</h6>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>버전</th>
+									<th>전송속도</th>
+									<th>설명 & 기능</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1.X</td>
+									<td>721Kbps</td>
+									<td>1.1 부터 1.2 까지 개선됨</td>
+								</tr>
+								<tr>
+									<td>2.X</td>
+									<td>2.1Mbps~3Mbps</td>
+									<td>+EnhancedDataRate(사용 시 3Mbps), +SecureSimplePairing, "블루투스 사용 권장 하한선"</td>
+								</tr>
+								<tr>
+									<td>3.0</td>
+									<td>2.1Mbps~24Mbps</td>
+									<td>HighSpeed사용 시 24Mbps, 보급형에 주로 사용됨. </td>
+								</tr>
+								<tr>
+									<td>4.0</td>
+									<td>1Mbps~24Mbps</td>
+									<td>클래식 블루투스, 고속 블루투스(24Mbps), 저전력 블루투스(1mbps) 프로토콜 지원</td>
+								</tr>
+								<tr>
+									<td>4.1</td>
+									<td>1Mbps~24Mbps</td>
+									<td>LTE와 블루투스 간섭감소, 자동 재 연결, </td>
+								</tr>
+								<tr>
+									<td>4.2</td>
+									<td>4.1의 2배</td>
+									<td>저전력 보안접속, LinkLayerPrivacy, 블루투스로 인터넷 접속, 보안 개선</td>
+								</tr>
+								<tr>
+									<td>5.0</td>
+									<td>거리별로 다름</td>
+									<td>최대속도와 거리 조절기능, 패킷량 증대, 비콘 서비스기능 추가, no페어링 통신</td>
+								</tr>
+								<tr>
+									<td>5.1</td>
+									<td>거리별로 다름</td>
+									<td>방향감지기능 추가</td>
+								</tr>
+								<tr>
+									<td>5.2</td>
+									<td>거리별로 다름</td>
+									<td>오디오 코덱 표준 지원 증대</td>
+								</tr>
+								<tr>
+									<td>5.3</td>
+									<td>거리별로 다름</td>
+									<td>전력소모량 감소, 암호화키 조절, 채널분류로 통신 신뢰도 개선</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>* 5.0 이상부터는 class 설정에 따라 최대거리, 최대전송속도가 달라짐.</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+					<hr class="major" />
+
+					<a id="ConnectBuletoothDongle"></a>
+					<h2>4. 동글로 블루투스 연결.</h2>
+					<span class="image fit"><img src="images/whatisConnect/bluetoothDongle.PNG"
+							style="max-width: 50%; max-height: 30%"></span>
+					<p>연결할 장치에는 충분하고 적합한 Port가 있지만 Bluetooth를 지원하지 않을 경우 이면서, 키보드는 Bluetooth기능을 가지고 있다면 블루투스 송수신기 역할을 해줄
+						수 있는 Bluetooth 동글을 장치에 연결해서 동글과 키보드간 연결이 가능합니다.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Top</a></li>
+					</ul>
+
+				</section>
+        `
+
+        //스위치별타건영상 load_Page12
+        var TextMainContents12 = 
+        `
+
+        `
+
+        //브랜드별타건영상 load_Page13
+        var TextMainContents13 = 
+        `
+		<section>
+					<header class="main">
+						<h1>브랜드 별 타건 영상 보기</h1>
+					</header>
+
+					<span class="image main"><img src="" /></span>
+					<p>지금 페이지에서는 <b>브랜드 별로 타이핑</b>하는 영상들을 보실 수 있습니다.</p>
+					<p>원하시는 제품을 바로 구매하지 마시고 사용시에 발생하는 모습, 소리를 듣고 구매하시면 더 현명한 소비를 하시는데 도움이 될 수 있습니다.</p>
+
+					<hr class="major" />
+
+					<p><b>ABKO - COX</b>. COX의 다양한 스위치를 순서대로 타건합니다.</p>
+					<video controls width="70%">
+						<source src="video/videoBrand/COX_CK01TKL.mp4">
+					</video>
+					<p><a href="http://www.coxenc.co.kr/" class="button" target="_blank">ABKO</a>
+						ABKO Store
+					<p><a href="#" class="button primary">Top</a>
+
+						<hr class="major" />
+
+					<p><b>Archon</b>. 청축, 갈축, 적축 스위치를 타건합니다.</p>
+					<video controls width="70%">
+						<source src="video/videoBrand/archon_ak60.mp4">
+					</video>
+					<p><a href="https://smartstore.naver.com/archon/" class="button" target="_blank">Archon</a>
+						Archon Naver Store
+					<p><a href="#" class="button primary">Top</a>
+
+						<hr class="major" />
+
+					<p><b>Keychron</b>. 청축, 갈축, 적축 스위치를 타건합니다.</p>
+					<video controls width="70%">
+						<source src="video/videoBrand/Keychron_K2.mp4">
+					</video>
+					<p><a href="https://www.keychron.com/" class="button" target="_blank">Keychron</a>
+						Keychron Store
+					<p><a href="#" class="button primary">Top</a>
+
+						<hr class="major" />
+
+				</section>
+        `
+
+        //키보드구매방법안내 load_Page14
+        var TextMainContents14 = 
+        `
+        `
+
+        //해외직구안내 load_Page15
+        var TextMainContents15 = 
+        `
+        `
+
+        //전문가와상담 load_Page16
+        var TextMainContents16 = 
+        `
+        `
+    </script>
+
+</body>
+
+</html>
