@@ -849,7 +849,6 @@ var Page_keyboardStorage_html_code =
 <header class="main">
     <h1>나의 저장된 기계식키보드 정보 보기.</h1>
 </header>
-<img src="images/카트이미지.png" width="30%" height="30%" />
 <p>
     해당 페이지에서 저장해놓았던 기계식키보드에 대해서 다시 볼 수 있습니다.
     <hr class="major" />
