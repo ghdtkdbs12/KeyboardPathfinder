@@ -89,7 +89,7 @@ var Page_index_html_code = //Page_index.html_code
         </ul>
     </article>
     <article>
-        <a href="#" onclick="PageStart_whatisKeyboard_html()" class="image">< href="#" img src="images/index/pic03.png" alt="images/noimage.jpg" /></a>
+        <a class="image" href="#"><img src="images/index/pic03.PNG" href="#" alt="images/noimage.jpg" oonclick="PageStart_whatisKeyboard_html()" /></a>
         <h3>기계식키보드 정보 보기</h3>
         <p>기계식키보드에 대해서 더 알고 싶나요? 자세히 알아보고 구매하고 싶으신가요? 추천만으로는 부족하시다면 기계식키보드에 대해서 모아놓은 정보를 간편하게 열람하세요.
             확인하고 습득하세요. 키보드만 보지 말고 키캡도 보고 디자인을 탐구하세요.</p>
@@ -849,6 +849,7 @@ var Page_keyboardStorage_html_code =
 <header class="main">
     <h1>나의 저장된 기계식키보드 정보 보기.</h1>
 </header>
+<img src="images/카트이미지.png" width="30%" height="30%" />
 <p>
     해당 페이지에서 저장해놓았던 기계식키보드에 대해서 다시 볼 수 있습니다.
     <hr class="major" />
