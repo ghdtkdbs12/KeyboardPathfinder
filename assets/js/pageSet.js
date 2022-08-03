@@ -1117,7 +1117,7 @@ var htmlText_KeycapColor_Art =
 ↑고래를 테마로 한 투톤 느낌의 키캡<p>
 <img src="images/keycaps/매화키캡.PNG" width="70%" height="70%"><p>
 ↑매화를 테마로한 핑크+화이트 색상의 키캡<p>
-<img src="images/keycaps/일본고래키캡.png" width="70%" height="70%"><p>
+<img src="images/keycaps/일본고래키캡.PNG" width="70%" height="70%"><p>
 ↑일본의 우키요예풍 동양화 느낌과 고래를 혼합한 디자인 키캡<p>
 <a href="#" class="button primary">Top</a>
 <hr class="major" />
