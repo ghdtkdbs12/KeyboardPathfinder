@@ -5,7 +5,7 @@ function PageStart_index_html() //main index의 페이지 불러오는 함수.
     document.getElementById('Page_index_html').innerHTML = Page_index_html_code;
 }
 var Page_index_html_code = //Page_index.html_code
-`
+    `
 <section id="banner">
 <div class="content">
     <header>
@@ -133,8 +133,8 @@ function PageStart_keyBoardMbti_html() //main index의 페이지 불러오는 �
 {
     document.getElementById('Page_index_html').innerHTML = Page_keyBoardMbti_html_code;
 }
-var Page_keyBoardMbti_html_code = 
-`
+var Page_keyBoardMbti_html_code =
+    `
 <section>
 					<header class="main">
 						<h1>Keyboard MBTI Test</h1>
@@ -598,8 +598,8 @@ function PageStart_imageShopping_html() //main index의 페이지 불러오는 �
 {
     document.getElementById('Page_index_html').innerHTML = Page_imageShopping_html_code;
 }
-var Page_imageShopping_html_code = 
-`
+var Page_imageShopping_html_code =
+    `
 <section>
 <header class="main">
     <h1>Image Based keyboard assembly</h1>
@@ -653,7 +653,7 @@ var Page_imageShopping_html_code =
         <label for="Answer_imageShopping_Switch_Brown">스위치-2. 택타일/넌클릭스위치(갈축).</label>
 </div>
 <div class="col-4 col-12-small">
-    <img src="images/Imagemake/적축.PNG" width="auto" height="auto">
+    <img src="images/Imagemake/적축.png" width="auto" height="auto">
     <p>
         <input type="radio" id="Answer_imageShopping_Switch_Red"
             name="Question_imageShopping_Switch" value="Answer_3_RedSwitch"
@@ -843,8 +843,8 @@ function PageStart_keyboardStorage_html() //main index의 페이지 불러오는
     document.getElementById('Page_index_html').innerHTML = Page_keyboardStorage_html_code;
     LoadLocalStorageData_StoragePage();
 }
-var Page_keyboardStorage_html_code = 
-`
+var Page_keyboardStorage_html_code =
+    `
 <section>
 <header class="main">
     <h1>나의 저장된 기계식키보드 정보 보기.</h1>
@@ -920,14 +920,14 @@ function LoadLocalStorageData_StoragePage() //스토리지 데이터 다시 가�
     let Storage_key; //키 저장하는 변수
     let Storage_value; //값 저장하는 변수
     output_LocalStorageData_start =
-    `
+        `
     <h2>WebStorage에 저장된 정보</h2>
     <table>
         <th>명칭</th> <!-- key값 -->
         <th>내용</th> <!-- value -->
     `;
     output_LocalStorageData_table =
-    `
+        `
     `
         ;
     for (localStorage_i = 0; localStorage_i < localStorage.length; localStorage_i++) {
@@ -939,7 +939,7 @@ function LoadLocalStorageData_StoragePage() //스토리지 데이터 다시 가�
         output_LocalStorageData_table += '<tr><td>' + Storage_key + '</td><td>' + Storage_value + '</td></tr>';
     }
     output_LocalStorageData_end =
-    `
+        `
     </table>
     갱신된 시간:
     `;
@@ -952,7 +952,7 @@ function LoadLocalStorageData_StoragePage() //스토리지 데이터 다시 가�
     let hours = today.getHours(); //시
     let minutes = today.getMinutes(); //분
     let seconds = today.getSeconds(); //초
-    set_WebStorage_Time = year + '년' + month + '월' + date + '일' + hours + '시' + minutes + '분' + seconds + '초' ;
+    set_WebStorage_Time = year + '년' + month + '월' + date + '일' + hours + '시' + minutes + '분' + seconds + '초';
     document.getElementById('part_showWebLocalStorageData_Date').innerHTML = set_WebStorage_Time; //갱신된 시간출력
 }
 function clearAllLocalStorageData() //알림 및 전체 저장된 스토리지 자료 삭제
@@ -974,8 +974,8 @@ function PageStart_variationKeycaps_html() //main index의 페이지 불러오�
 {
     document.getElementById('Page_index_html').innerHTML = Page_variationKeycaps_html_code;
 }
-var Page_variationKeycaps_html_code = 
-`
+var Page_variationKeycaps_html_code =
+    `
 <section>
 					<header class="main">
 						<h1>What is Keycap? <P></P> 키캡에는 어떤 특징이 있는가</h1>
@@ -1033,12 +1033,11 @@ var Page_variationKeycaps_html_code =
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [추천 하는 키캡] recommendationKeycaps page
-function PageStart_recommendationKeycaps_html()
-{
+function PageStart_recommendationKeycaps_html() {
     document.getElementById('Page_index_html').innerHTML = Page_recommendationKeycaps_html_code;
 }
-var Page_recommendationKeycaps_html_code = 
-`
+var Page_recommendationKeycaps_html_code =
+    `
 <header class="main" id="pageTop_findKeycap">
 <h1>나에게 어울리는 키캡 찾기</h1>
 </header>
@@ -1163,12 +1162,11 @@ function selectKeycapConcept_specialMaterial() {
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [기계식키보드의 개론] whatisKeyboard.html
-function PageStart_whatisKeyboard_html()
-{
+function PageStart_whatisKeyboard_html() {
     document.getElementById('Page_index_html').innerHTML = Page_whatisKeyboard_html_code;
 }
-var Page_whatisKeyboard_html_code = 
-`
+var Page_whatisKeyboard_html_code =
+    `
 <section>
 					<header class="main">
 						<h1>기계식키보드. 입력장치계의 만년필</h1>
@@ -1341,12 +1339,11 @@ var Page_whatisKeyboard_html_code =
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [기계식 스위치의 분류] whatisSwitch
-function PageStart_whatisSwitch_html()
-{
+function PageStart_whatisSwitch_html() {
     document.getElementById('Page_index_html').innerHTML = Page_whatisSwitch_html_code;
 }
-var Page_whatisSwitch_html_code = 
-`
+var Page_whatisSwitch_html_code =
+    `
 <section>
 <header class="main">
     <h1>Switch. 키 입력 신호를 받는 부품</h1>
@@ -1423,12 +1420,11 @@ var Page_whatisSwitch_html_code =
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [기계식스위치의 종류] everySwitch
-function PageStart_everySwitch_html()
-{
+function PageStart_everySwitch_html() {
     document.getElementById('Page_index_html').innerHTML = Page_everySwitch_html_code;
 }
-var Page_everySwitch_html_code = 
-`
+var Page_everySwitch_html_code =
+    `
 <section>
 <header class="main">
     <h1>Switch Brand. 다양한 제조회사들의 작품</h1>
@@ -1464,12 +1460,11 @@ var Page_everySwitch_html_code =
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [키보드의 연결방식] whatisConnect
-function PageStart_whatisConnect_html()
-{
+function PageStart_whatisConnect_html() {
     document.getElementById('Page_index_html').innerHTML = Page_whatisConnect_html_code;
 }
-var Page_whatisConnect_html_code = 
-`
+var Page_whatisConnect_html_code =
+    `
 <section>
 				키보드 유선연결	
 					<header class="main">
@@ -1627,12 +1622,11 @@ var Page_whatisConnect_html_code =
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [스위치별 타건영상] videoSwitch
-function PageStart_videoSwitch_html()
-{
+function PageStart_videoSwitch_html() {
     document.getElementById('Page_index_html').innerHTML = Page_videoSwitch_html_code;
 }
-var Page_videoSwitch_html_code = 
-`
+var Page_videoSwitch_html_code =
+    `
 <!-- Content -->
 <section>
     <header class="main">
@@ -1659,11 +1653,11 @@ var Page_videoSwitch_html_code =
 `;
 
 
-function ShowFunction_SwitchVideo(){
+function ShowFunction_SwitchVideo() {
     var choice_SwitchVideo = document.getElementById("select_SwitchVideo").value;
-    if(choice_SwitchVideo=="Video_BlueSwitch"){
-        document.getElementById('Show_SwitchVideo').innerHTML = 
-        `
+    if (choice_SwitchVideo == "Video_BlueSwitch") {
+        document.getElementById('Show_SwitchVideo').innerHTML =
+            `
         <b>클릭커 스위치, Blue Switch 테스트 영상</b>
         <video controls width="90%">
             <source src="video/videoSwitch/blueSwitchshort.mp4">
@@ -1671,9 +1665,9 @@ function ShowFunction_SwitchVideo(){
         <p><a href="#" class="button primary">Top</a>
         `;
     }
-    else if(choice_SwitchVideo=="Video_BrownSwitch"){
-        document.getElementById('Show_SwitchVideo').innerHTML = 					
-        `
+    else if (choice_SwitchVideo == "Video_BrownSwitch") {
+        document.getElementById('Show_SwitchVideo').innerHTML =
+            `
         <b>넌클릭 스위치, Brown Switch 테스트 영상</b>
         <video controls width="90%">
             <source src="video/videoSwitch/BrownSwitchShot.mp4">
@@ -1681,9 +1675,9 @@ function ShowFunction_SwitchVideo(){
         <p><a href="#" class="button primary">Top</a>
         `;
     }
-    else if(choice_SwitchVideo=="Video_RedSwitch"){
-        document.getElementById('Show_SwitchVideo').innerHTML = 					
-        `
+    else if (choice_SwitchVideo == "Video_RedSwitch") {
+        document.getElementById('Show_SwitchVideo').innerHTML =
+            `
         <b>리니어 스위치, Red Switch 테스트 영상</b>
         <video controls width="90%">
             <source src="video/videoSwitch/RedSwitchShot.mp4">
@@ -1691,9 +1685,9 @@ function ShowFunction_SwitchVideo(){
         <p><a href="#" class="button primary">Top</a>
         `;
     }
-    else if(choice_SwitchVideo=="Video_SilentSwitch"){
-        document.getElementById('Show_SwitchVideo').innerHTML = 
-        `
+    else if (choice_SwitchVideo == "Video_SilentSwitch") {
+        document.getElementById('Show_SwitchVideo').innerHTML =
+            `
         <b>저소음 스위치, Silent Switch 테스트 영상</b>
         <video controls width="90%">
             <source src="video/videoSwitch/SilentSwitchShot.mp4">
@@ -1701,7 +1695,7 @@ function ShowFunction_SwitchVideo(){
         <p><a href="#" class="button primary">Top</a>
         `;
     }
-    else{
+    else {
         document.getElementById('Show_SwitchVideo').innerHTML = "보고싶은 항목을 선택하여 주세요.";
     }
 }
@@ -1715,12 +1709,11 @@ function ShowFunction_SwitchVideo(){
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [브랜드별 타건영상] videoBrand
-function PageStart_videoBrand_html()
-{
+function PageStart_videoBrand_html() {
     document.getElementById('Page_index_html').innerHTML = Page_videoBrand_html_code;
 }
-var Page_videoBrand_html_code = 
-`
+var Page_videoBrand_html_code =
+    `
 <!-- Content -->
 <section>
     <header class="main">
@@ -1774,12 +1767,11 @@ var Page_videoBrand_html_code =
 
 //------------------------------------------------------------------------------------------------------
 //#페이지 [키보드 구매방법 안내] buyDanawa
-function PageStart_buyDanawa_html()
-{
+function PageStart_buyDanawa_html() {
     document.getElementById('Page_index_html').innerHTML = Page_buyDanawa_html_code;
 }
-var Page_buyDanawa_html_code = 
-`
+var Page_buyDanawa_html_code =
+    `
 <section>
 <header class="main">
     <h1>How to buy from Online ShoppingMall (Danawa)</h1>
